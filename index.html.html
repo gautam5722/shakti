@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautam Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: aqua;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/gymtemp.jpg");
+    }
+    .left{
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+    }
+    .left img{
+        width: 200px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 48%;
+        margin: 20px auto;
+        border: 2px solid yellow;
+    }
+    .right{
+        position: absolute;
+        right: 36px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid aqua;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: yellowgreen;
+    }
+    .btn{
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: chartreuse;
+    }
+</style>
+<body>
+    <head class="header">
+        <!-- Left Box Logo -->
+        <div class="left">
+            <img src="img/gymlogo.jpg" alt="">
+            <div>Gautam Fitness</div>
+        </div>
+        <!-- Mid Box for Navbar -->
+        <div class="mid">
+         <ul class="navbar">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Fitness Calculator</a></li>
+             <li><a href="#">Contact Us</a></li>
+         </ul>   
+        </div>
+        <!-- Right bar for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </head>
+</body>
+</html>
